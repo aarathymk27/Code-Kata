@@ -1,0 +1,40 @@
+/**
+ * 
+ */
+package code;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+/**
+ *
+ *
+ */
+public class SampleDemoTest {
+
+	@Test
+	public void test_Calculate_DivisibleBy3(){
+		
+		String str = SampleDemo.calculate(3);
+		Assert.assertEquals("FooBar", str);		
+	}
+	
+	@Test
+	public void test_Calculate_DivisibleBy5(){		
+		String str = SampleDemo.calculate(5);
+		Assert.assertEquals("Bar", str);		
+	}
+	
+	@Test
+	public void test_Calculate_DivisibleBy15(){		
+		String str = SampleDemo.calculate(15);
+		Assert.assertEquals("Foo", str);		
+	}
+	
+	@Test
+	public void test_Calculate_DivisibleByNone(){		
+		String str = SampleDemo.calculate(23);
+		Assert.assertEquals("The number should be divisible by 3,5 0r 15", str);		
+	}
+
+}
