@@ -1,0 +1,29 @@
+package code;
+
+import java.util.Scanner;
+
+public class SampleDemo {
+
+	private static Scanner scan;
+	public static void main(String[] args) {
+		scan = new Scanner(System.in);
+		System.out.println(calculate(scan.nextInt()));	
+
+	}
+	/**
+	 * 
+	 */
+	public static String calculate(int i) {
+
+		if(i % (3*5) == 0){
+			return "Foo";
+		} else if(i % 5 == 0){
+			return "Bar";
+		} else if(i % 3 == 0){
+			return "FooBar";
+		} else {
+			return "The number should be divisible by 3,5 0r 15";
+		}
+	}
+
+}
